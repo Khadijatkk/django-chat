@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1.o">
+    <title>FORM</title>
+    <style>
+        form {
+            width: 300px;
+            background-color: aliceblue;
+        }
+
+        div {
+            margin-bottom: 10px;
+        }
+
+        button {
+            width: 100px;
+            margin-left: 100px;
+            margin-top: 10px;
+            height: 30px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="{% url 'home' %}">home</a>
+    <form method="post" action="">
+        <!-- {% for message in messages %}
+            <p>{{message}}</p>
+            {% endfor %}
+            {% csrf_token %} -->
+        <h1>create a record</h1>`
+        <div>
+            <div>Name: </div>
+            <div> <input name="name" type="text" required> </div>
+            <div>Registration Number: </div>
+            <div> <input name="Registration" type="text" required> </div>
+        </div>
+
+        <div>
+            <div>Age: </div>
+            <div> <input name="age" type="number" required> </div>
+        </div>
+        <div>
+            <div>cgpa:</div>
+            <div><input name="cgpa" type="text"></div>
+        </div>
+        </div>
+        <div>
+            <div>Date Joined:</div>
+            <div><input name="datejoined" type="date"></div>
+        </div>
+        <button>Register</button>
+    </form>
+</body>
+
+</html>
