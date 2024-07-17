@@ -17,9 +17,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from app.views import home
-from web.views import profile
-from web.views import student
-from web.views import newstudent
+from app.views import profile
+from app.views import student
+from app.views import newstudent
 
 
 urlpatterns = [

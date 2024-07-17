@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from app.models import student
+from app.models import Student
 from django.contrib import messages
 
 # Create your views here.
